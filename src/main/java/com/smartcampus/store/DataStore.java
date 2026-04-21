@@ -1,10 +1,14 @@
-package com.smartcampus;
+package com.smartcampus.store;
 
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class MockDatabase {
+import com.smartcampus.model.Room;
+import com.smartcampus.model.Sensor;
+import com.smartcampus.model.SensorReading;
+
+public class DataStore {
 
     // Simulating database tables using thread-safe maps
     public static final Map<String, Room> rooms = new ConcurrentHashMap<>();
